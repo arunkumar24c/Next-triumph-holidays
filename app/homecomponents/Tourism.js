@@ -125,9 +125,9 @@ const Tourism = () => {
                         <Image
                           src={trip.imgSrc}
                           width={150}
-                          height={160}
+                          height={290}
                           alt="img"
-                          className="h-[160px] w-[150px]"
+                          className="h-[290px] w-[150px]"
                         />
                         <div className="bg-[#FFF2F1] p-4">
                           <h2 className="text-[#4b4b4b] text-[14px]">
