@@ -18,7 +18,8 @@ const Newsletter = () => {
               Sign up to our newsletter
             </h1>
             <p className="text-[16px] font-medium leading-normal text-center text-[#3c3c3c]">
-              We'll send you exclusive offers and sneak peeks of our best deals,
+              We&apos;ll send you exclusive offers and sneak peeks of our best
+              deals,
             </p>
           </div>
           <div className="flex gap-2  px-10">

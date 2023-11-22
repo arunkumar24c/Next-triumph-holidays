@@ -104,7 +104,7 @@ const Tourism = () => {
                 <p className="text-white text-[16px] font-extralight leading-normal">
                   Ever-fascinating Tokyo has endless things to do. But you{" "}
                   <br />
-                  can't miss these.
+                  can&apos;t miss these.
                 </p>
                 <div>
                   {" "}
