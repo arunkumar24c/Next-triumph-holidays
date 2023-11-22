@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .brand-container {
+    @apply container mx-auto px-5 md:px-0 lg:px-0 xl:px-0 py-5;
+  }
+
+  h1 {
+    @apply text-[22px] font-bold;
+  }
+  h2 {
+    @apply text-[18px] font-bold;
+  }
+  h3 {
+    @apply text-xl font-bold;
+  }
+  h4 {
+    @apply text-lg font-bold;
+  }
+  h5 {
+    @apply text-sm font-bold;
+  }
+  p {
+    @apply text-[16px] font-medium;
+  }
+
+  .bg {
+    background-image: url("../public/assest/trip/bg.png");
+
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+
+  @keyframes spin-half-and-back {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(90deg); 
+    }
+    100% {
+      transform: rotate(0deg); 
+    }
+  }
+
+  .animate-spin-half-and-back {
+    animation: spin-half-and-back 50s linear infinite; 
+  }
+  
+  @keyframes spin-half-and-backs {
+    0% {
+      transform: rotate(180deg);
+    }
+    50% {
+      transform: rotate(300deg); 
+    }
+    100% {
+      transform: rotate(180deg); 
+    }
+  }
+
+  .animate-spin-half-and-backs {
+    animation: spin-half-and-backs 50s linear infinite; 
+  }
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+.typing-text {
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 3s steps(40) infinite;
+}
+
+.cursor {
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+
+
+
+
+
+
+}
