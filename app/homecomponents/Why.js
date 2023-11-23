@@ -42,7 +42,7 @@ const Why = () => {
             {iconsData.map((item, index) => (
               <div className="relative" key={index}>
                 <div
-                  className="flex flex-col border shadow-lg rounded-xl bg-[#FF5956] text-white px-16 py-16 justify-center items-center overflow-hidden relative"
+                  className="flex flex-col border shadow-lg rounded-xl bg-[#FF5956] text-white cursor-pointer px-16 py-16 justify-center items-center overflow-hidden relative"
                   onMouseEnter={() => handleHover(index)}
                   onMouseLeave={() => handleHover(index)}
                   style={{ width: "fit-content", height: "fit-content" }}
