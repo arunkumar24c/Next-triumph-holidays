@@ -98,11 +98,8 @@ const Tourism = () => {
         <div className="bgs my-8">
           <div className="bg-[#FF5956BF] ">
             <div className="flex flex-col gap-5 justify-center items-center text-center py-16 ">
-              <h1 className="text-[40px]    font-bold text-[#f8f42e] relative inline-block overflow-hidden px-5">
-                <span className="typing-text block whitespace-nowrap overflow-hidden">
-                  {text[textIndex]}
-                  <span className="cursor w-[1px] inline-block bg-orange-500 h-[1em] absolute top-0 animate-blink" />
-                </span>
+              <h1 className="text-[40px] w-full   font-bold text-[#f8f42e] relative inline-block overflow-hidden px-5">
+                Explore Indian Tourism
               </h1>
               <p className="text-white">
                 Your portal to extraordinary marvels around the globe.
@@ -120,11 +117,8 @@ const Tourism = () => {
         <div className="bgs my-8">
           <div className="bg-[#FF5956BF] ">
             <div className="flex flex-col gap-5 justify-center items-center text-center py-16 ">
-              <h1 className="text-[40px]    font-bold text-[#f8f42e] relative inline-block overflow-hidden px-5">
-                <span className="typing-text block whitespace-nowrap overflow-hidden">
-                  {texts[textIndex]}
-                  <span className="cursor w-[1px] inline-block bg-orange-500 h-[1em] absolute top-0 animate-blink" />
-                </span>
+              <h1 className="text-[40px]  w-full  font-bold text-[#f8f42e] relative inline-block overflow-hidden px-5">
+                Explore Indian Tourism
               </h1>
               <p className="text-white">
                 Discover the wonders of Indian tourism.
