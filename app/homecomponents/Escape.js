@@ -42,7 +42,7 @@ const places = [
 
 const Escape = () => {
   return (
-    <div className="brand-container py-10 px-5">
+    <div className="brand-container py-10 px-5 relative">
       <div className="flex flex-col gap-6 justify-center items-center">
         <div>
           <h2 className="text-[14px] text-center text-[#000000] font-medium">
@@ -79,6 +79,15 @@ const Escape = () => {
             </div>
           ))}
         </div>
+      </div>
+      <div className="-z-50 absolute  top-[10rem] -left-[12rem] rotate-180 xl:block lg:block hidden ">
+        <Image
+          src={"/assest/animate/plan.png"}
+          width={300}
+          height={300}
+          alt="img"
+          className="animate-spin-half-and-back "
+        />
       </div>
     </div>
   );

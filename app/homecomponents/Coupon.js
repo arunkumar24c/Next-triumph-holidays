@@ -5,6 +5,7 @@ import { GoArrowRight, GoArrowLeft } from "react-icons/go";
 import "../../public/assest/trip/img.jpg";
 
 import "glider-js/glider.min.css";
+import Link from "next/link";
 
 const testimonialData = [
   {
@@ -113,19 +114,30 @@ const Coupon = () => {
         >
           {testimonialData.map((testimonial) => (
             <div className="px-2" key={testimonial.id}>
-              <PopularDestinationCard {...testimonial} />
+              <Link href="/coupon">
+                {" "}
+                <PopularDestinationCard {...testimonial} />
+              </Link>
             </div>
           ))}
         </Glider>
+        <div className="flex justify-center py-5 ">
+          <Link href="/intertour">
+            <button className="bg-[#FF5956] text-[white] px-8 py-2 ">
+              Explore
+            </button>
+          </Link>
+        </div>
+
         <div className="glider-arrows flex items-center justify-center gap-3 relative">
           <button
-            className="glider-arrow border xl:absolute -top-[17rem] -left-[40px] bg-[#FFF2F1] text-[#DC2626] shadow-lg px-5 py-5 rounded-full "
+            className="glider-arrow border xl:absolute -top-[22rem] -left-[40px] bg-[#FFF2F1] text-[#DC2626] shadow-lg px-5 py-5 rounded-full "
             onClick={handleGliderPrev}
           >
             <GoArrowLeft size={32} />
           </button>
           <button
-            className="glider-arrow border xl:absolute  -top-[17rem] -right-[35px] bg-[#FFF2F1] text-[#DC2626] shadow-lg px-5 py-5 rounded-full "
+            className="glider-arrow border xl:absolute  -top-[22rem] -right-[35px] bg-[#FFF2F1] text-[#DC2626] shadow-lg px-5 py-5 rounded-full "
             onClick={handleGliderNext}
           >
             <GoArrowRight size={32} />
@@ -156,12 +168,13 @@ const PopularDestinationCard = ({ names, cities, tour }) => {
                 {tour}
               </p>
             </div>
-            <button className="px-5 py-2 font-semibold text-[14px] text-white bg-[#FF5956] rounded-md">
+            {/* <button className="px-5 py-2 font-semibold text-[14px] text-white bg-[#FF5956] rounded-md">
               Book now !{" "}
-            </button>
+            </button> */}
           </div>
         </div>
       </div>
+      
     </div>
   );
 };

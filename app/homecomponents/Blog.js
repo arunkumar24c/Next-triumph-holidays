@@ -5,6 +5,7 @@ import { GoArrowRight, GoArrowLeft } from "react-icons/go";
 import { IoIosArrowForward } from "react-icons/io";
 import Image from "next/image";
 import "glider-js/glider.min.css";
+import Link from "next/link";
 
 const testimonialData = [
   {
@@ -118,15 +119,22 @@ const Blog = () => {
             </div>
           ))}
         </Glider>
+        <div className="flex justify-center py-5 ">
+          <Link href="/Blog">
+            <button className="bg-[#FF5956] text-[white] px-8 py-2 ">
+              Explore
+            </button>
+          </Link>
+        </div>
         <div className="glider-arrows flex items-center justify-center gap-3 relative">
           <button
-            className="glider-arrow border xl:absolute -top-[17rem] -left-[40px] bg-white shadow-lg px-5 py-5 rounded-full "
+            className="glider-arrow border xl:absolute -top-[22rem] -left-[40px] bg-white shadow-lg px-5 py-5 rounded-full "
             onClick={handleGliderPrev}
           >
             <GoArrowLeft size={32} />
           </button>
           <button
-            className="glider-arrow border xl:absolute -top-[17rem] -right-[35px] bg-white shadow-lg px-5 py-5 rounded-full "
+            className="glider-arrow border xl:absolute -top-[22rem] -right-[35px] bg-white shadow-lg px-5 py-5 rounded-full "
             onClick={handleGliderNext}
           >
             <GoArrowRight size={32} />

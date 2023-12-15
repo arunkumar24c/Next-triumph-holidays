@@ -54,8 +54,6 @@ const Sliders = () => {
 
   return (
     <div className="w-full px-5 py-10">
-      
-
       <Slider {...settings}>
         <div className="shadow-md relative px-5 ">
           <div className="flex ">

@@ -13,6 +13,9 @@ import Blog from "./homecomponents/Blog";
 import Newsletter from "./homecomponents/Newsletter";
 import Triumph from "./homecomponents/Triumph";
 import Testimonials from "./homecomponents/Testimonial";
+import Banner from "./homecomponents/Banner";
+import Gallery from "./homecomponents/Gallery";
+import Design from "./homecomponents/Design";
 
 
 export const metadata = {
@@ -30,12 +33,17 @@ const page = () => {
       <Escape />
       <Global />
       <Location />
+      {/* <Banner /> */}
       <Coupon />
+      {/* <Gallery /> */}
+      {/* <Design /> */}
       <Blog />
+
       <Experience />
       <Testimonials />
       <Faq />
       <Newsletter />
+
       <Triumph />
     </div>
   );

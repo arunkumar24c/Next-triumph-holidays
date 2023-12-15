@@ -1,7 +1,18 @@
+"use client"
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
+import Gift from "./Gift";
 
 const Experience = () => {
+  const [registerModal, setRegisterModal] = useState(false);
+
+  const openModal = () => {
+    setRegisterModal(true);
+  };
+
+  const closeModal = () => {
+    setRegisterModal(false);
+  };
   return (
     <div className="my-16 overflow-hidden">
       <div className="brand-container relative z-50 py-16">
@@ -39,7 +50,7 @@ const Experience = () => {
                   alt="imgs"
                 />
                 <Image
-                  src={"/assest/navbar/logo.jpg"}
+                  src={"/assest/navbar/logo.png"}
                   width={157}
                   height={41}
                   className="absolute w-[120px] bottom-6"
@@ -57,7 +68,10 @@ const Experience = () => {
                   We denounce with righteous indignation.{" "}
                 </p>
                 <div className=" py-2">
-                  <button className="px-8 py-2 font-medium text-[14px] text-white bg-[#FF5956] rounded-md">
+                  <button
+                    className="px-8 py-2 font-medium text-[14px] text-white bg-[#FF5956] "
+                    onClick={openModal}
+                  >
                     Explore
                   </button>
                 </div>
@@ -75,6 +89,7 @@ const Experience = () => {
           />
         </div>
       </div>
+      {registerModal && <Gift closeModal={closeModal} />}
     </div>
   );
 };

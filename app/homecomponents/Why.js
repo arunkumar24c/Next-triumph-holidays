@@ -1,15 +1,11 @@
 "use client";
 import React, { useState } from "react";
-import { GiLightningStorm } from "react-icons/gi";
+import { MdTimer } from "react-icons/md";
 import { MdContacts } from "react-icons/md";
 import { IoIosPricetags } from "react-icons/io";
 import { LiaTreeSolid } from "react-icons/lia";
 
 const iconsData = [
-  {
-    icon: <GiLightningStorm size={35} />,
-    title: "24/7 Assistance",
-  },
   {
     icon: <MdContacts size={35} />,
     title: "Expert Guidance",
@@ -21,6 +17,10 @@ const iconsData = [
   {
     icon: <LiaTreeSolid size={35} />,
     title: "Custom Holidays",
+  },
+  {
+    icon: <MdTimer size={35} />,
+    title: "24/7 Assistance",
   },
 ];
 

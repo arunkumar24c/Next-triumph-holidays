@@ -1,4 +1,3 @@
-
 "use client";
 import React, { useState, useRef, useCallback } from "react";
 import Glider from "react-glider";
@@ -6,6 +5,7 @@ import { GoArrowRight, GoArrowLeft } from "react-icons/go";
 import "../../public/assest/trip/img.jpg";
 
 import "glider-js/glider.min.css";
+import Link from "next/link";
 
 const testimonialData = [
   {
@@ -84,7 +84,7 @@ const Nexttrip = () => {
               },
             },
             {
-              breakpoint: 800,
+              breakpoint: 700,
               settings: {
                 slidesToShow: "2",
                 slidesToScroll: "auto",
@@ -95,7 +95,7 @@ const Nexttrip = () => {
             {
               breakpoint: 480,
               settings: {
-                slidesToShow: "1",
+                slidesToShow: "2",
                 slidesToScroll: "auto",
                 itemWidth: 150,
                 duration: 0.25,
@@ -138,26 +138,40 @@ const Nexttrip = () => {
 };
 
 const PopularDestinationCard = ({ names, cities, tour }) => {
+  const [hovered, setHovered] = useState(false);
   return (
-    <div className="brand-container py-5  ">
+    <div className="brand-container py-5">
       <div className="">
         <div
-          className="w-[300px] h-[450px] rounded-md flex justify-center items-end py-5 px-5 "
+          className="w-[300px] h-[450px] rounded-md flex justify-center items-end cursor-pointer py-5 px-5 relative overflow-hidden"
           style={{
             backgroundImage: 'url("/assest/trip/img.jpg")',
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
           }}
+          onMouseEnter={() => setHovered(true)}
+          onMouseLeave={() => setHovered(false)}
         >
           <div className="flex flex-col gap-2 justify-center items-center">
             <h2 className="text-white text-[18px]">{names}</h2>
-            <div className="flex gap-3 ">
+            <div className="flex gap-3">
               <p className="text-white text-[12px]">{cities}</p>
-              <p className="text-[#ffffff] font-light italic text-[12px]">{tour}</p>
+              <p className="text-[#ffffff] font-light italic text-[12px]">
+                {tour}
+              </p>
             </div>
-            <button className="px-5 py-2 font-semibold text-[14px] text-white bg-[#FF5956] rounded-md">
-              Book now !{" "}
-            </button>
+            <Link href="/package">
+              <button
+                className={`px-5 py-2.5 font-semibold text-[14px] text-white bg-[#FF5956]  transition-transform duration-300 transform ${
+                  hovered ? "translate-y-0" : "translate-y-[5rem]"
+                }`}
+                style={{
+                  marginTop: hovered ? "0" : "-18px",
+                }}
+              >
+                Explore Packages
+              </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -166,7 +180,3 @@ const PopularDestinationCard = ({ names, cities, tour }) => {
 };
 
 export default Nexttrip;
-
-
-
-

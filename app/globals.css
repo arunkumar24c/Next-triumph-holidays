@@ -26,13 +26,26 @@
     @apply text-[16px] font-medium;
   }
 
-  .bg {
-    background-image: url("../public/assest/trip/bg.png");
+  .bgs {
+    background-image: url("../public/assest/trip/banner.png");
 
     background-size: cover;
     background-repeat: no-repeat;
   }
 
+.bg {
+    background-image: url("../public/assest/trip/bg.png");
+
+    background-size: cover;
+    background-repeat: no-repeat;
+  } 
+
+  .bgtour{
+    background-image: url("../public/assest/tour/tour.png");
+
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 
   @keyframes spin-half-and-back {
     0% {
@@ -92,12 +105,25 @@
   letter-spacing: 0.15em;
   animation: typing 3s steps(40) infinite;
 }
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
+.animate-fade-in {
+  animation: fade-in 0.5s ease-in-out;
+}
 .cursor {
   animation: blink-caret 0.75s step-end infinite;
 }
 
-
+.ss::-webkit-scrollbar {
+          display: none;
+        }
 
 
 
