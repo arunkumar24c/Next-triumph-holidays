@@ -28,7 +28,7 @@ const Newsletter = () => {
               placeholder="Your email"
               className="bg-white xl:w-[700px] lg:w-[600px] md:[400px] w-full border border-[#cccccc] text-black px-4 py-3"
             />
-            <button className="bg-[#F96768] text-[14px] px-5 text-white rounded-md">
+            <button className="bg-[#F96768] text-[14px] px-5 text-white ">
               Submit
             </button>
           </div>
