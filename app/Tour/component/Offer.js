@@ -69,11 +69,12 @@ const Offer = () => {
           </div>
           <div className="grid grid-cols-1 xl:grid-cols-4 md:grid-cols-2 lg:grid-cols-3 gap-8 py-4 ">
             {TourData.map((tour, index) => (
-              <Link href="/package">
+             
                 <div
                   className="relative flex justify-center items-center "
                   key={index}
                 >
+                   <Link href="/package">
                   <Image
                     src={tour.src}
                     width={270}
@@ -97,8 +98,9 @@ const Offer = () => {
                     </button>
                   </div> */}
                   </div>
+                  </Link>
                 </div>
-              </Link>
+              
             ))}
           </div>
         </div>
