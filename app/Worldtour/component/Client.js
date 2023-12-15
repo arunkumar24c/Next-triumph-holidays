@@ -20,6 +20,7 @@ const Client = () => {
               <Image
                 width={300}
                 height={700}
+                alt="img"
                 className="w-full"
                 src={"/assest/tour/image.png"}
               />
@@ -37,6 +38,7 @@ const Client = () => {
               <Image
                 width={300}
                 height={700}
+                alt="img"
                 className="w-full"
                 src={"/assest/tour/image.png"}
               />
@@ -54,6 +56,7 @@ const Client = () => {
               <Image
                 width={300}
                 height={700}
+                alt="img"
                 className="w-full"
                 src={"/assest/tour/image.png"}
               />

@@ -17,8 +17,8 @@ import { Link } from "react-scroll";
 import { VscFilterFilled } from "react-icons/vsc";
 
 const Filter = () => {
-  const [isOpen, setIsOpen] = useState(true); // To manage the arrow open/close state
-  const [checkboxes, setCheckboxes] = useState(Array(5).fill(false)); // Array to manage checkbox states
+  const [isOpen, setIsOpen] = useState(true);
+  const [checkboxes, setCheckboxes] = useState(Array(5).fill(false));
 
   const toggleArrow = () => {
     setIsOpen(!isOpen);
@@ -31,11 +31,11 @@ const Filter = () => {
   };
 
   const ratingOptions = [
-    [1, <FaStar />, <FaRegStar />, <FaRegStar />, <FaRegStar />, <FaRegStar />],
-    [2, <FaStar />, <FaStar />, <FaRegStar />, <FaRegStar />, <FaRegStar />],
-    [3, <FaStar />, <FaStar />, <FaStar />, <FaRegStar />, <FaRegStar />],
-    [4, <FaStar />, <FaStar />, <FaStar />, <FaStar />, <FaRegStar />],
-    [5, <FaStar />, <FaStar />, <FaStar />, <FaStar />, <FaStar />],
+    [1, <FaStar key={1} />, <FaRegStar key={1} />, <FaRegStar key={1} />, <FaRegStar key={1} />, <FaRegStar key={1} />],
+    [2, <FaStar key={1} />, <FaStar key={1} />, <FaRegStar key={1} />, <FaRegStar key={1} />, <FaRegStar key={1} />],
+    [3, <FaStar key={1} />, <FaStar key={1}/>, <FaStar key={1} />, <FaRegStar key={1} />, <FaRegStar key={1} />],
+    [4, <FaStar key={1} />, <FaStar key={1} />, <FaStar key={1} />, <FaStar key={1} />, <FaRegStar key={1} />],
+    [5, <FaStar key={1} />, <FaStar key={1} />, <FaStar key={1} />, <FaStar key={1} />, <FaStar key={1} />],
   ];
   const [sections, setSections] = useState([
     {
@@ -67,7 +67,6 @@ const Filter = () => {
       items: ["1-3 Days", "1 week", "2 Weeks", "1 Month"],
       showList: true,
     },
-    // Add more sections as needed
   ]);
 
   const toggleInputList = (index) => {
@@ -75,51 +74,49 @@ const Filter = () => {
     updatedSections[index].showList = !updatedSections[index].showList;
     setSections(updatedSections);
   };
-   const [showFilters, setShowFilters] = useState(true);
-   const [isMobileScreen, setIsMobileScreen] = useState(false);
+  const [showFilters, setShowFilters] = useState(true);
+  const [isMobileScreen, setIsMobileScreen] = useState(false);
 
-   useEffect(() => {
-     const mediaQuery = window.matchMedia("(max-width: 768px)"); // Define your mobile breakpoint here
-     setIsMobileScreen(mediaQuery.matches);
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 768px)"); // Define your mobile breakpoint here
+    setIsMobileScreen(mediaQuery.matches);
 
-     const handleScreenResize = () => {
-       setIsMobileScreen(mediaQuery.matches);
-     };
-
-     mediaQuery.addListener(handleScreenResize);
-
-     return () => {
-       mediaQuery.removeListener(handleScreenResize);
-     };
-   }, []);
-
-   const handleFilterClick = () => {
-     if (isMobileScreen) {
-       setShowFilters(!showFilters);
-     }
-   };
-   const [selectedLocation, setSelectedLocation] = useState("");
-
-   const handleLocationChange = (e) => {
-     setSelectedLocation(e.target.value);
-   };
-    const [selectedLocations, setSelectedLocations] = useState("");
-
-    const handleLocationChanges = (e) => {
-      setSelectedLocations(e.target.value);
+    const handleScreenResize = () => {
+      setIsMobileScreen(mediaQuery.matches);
     };
-   const locations = [
-     { id: 1, name: "Coimbatore, Tamil Nadu" },
-     { id: 2, name: "Chennai, Tamil Nadu" },
-     { id: 3, name: "Madras, Tamil Nadu" },
-     
-   ];
-     const locatio = [
-       { id: 1, name: "Coimbatore, Tamil Nadu" },
-       { id: 2, name: "Chennai, Tamil Nadu" },
-       { id: 3, name: "Madras, Tamil Nadu" },
-   
-     ];
+
+    mediaQuery.addListener(handleScreenResize);
+
+    return () => {
+      mediaQuery.removeListener(handleScreenResize);
+    };
+  }, []);
+
+  const handleFilterClick = () => {
+    if (isMobileScreen) {
+      setShowFilters(!showFilters);
+    }
+  };
+  const [selectedLocation, setSelectedLocation] = useState("");
+
+  const handleLocationChange = (e) => {
+    setSelectedLocation(e.target.value);
+  };
+  const [selectedLocations, setSelectedLocations] = useState("");
+
+  const handleLocationChanges = (e) => {
+    setSelectedLocations(e.target.value);
+  };
+  const locations = [
+    { id: 1, name: "Coimbatore, Tamil Nadu" },
+    { id: 2, name: "Chennai, Tamil Nadu" },
+    { id: 3, name: "Madras, Tamil Nadu" },
+  ];
+  const locatio = [
+    { id: 1, name: "Coimbatore, Tamil Nadu" },
+    { id: 2, name: "Chennai, Tamil Nadu" },
+    { id: 3, name: "Madras, Tamil Nadu" },
+  ];
   return (
     <div className="mt-[6rem]">
       <div className="brand-container">
@@ -219,13 +216,15 @@ const Filter = () => {
                 <div className="flex flex-col gap-4 py-4">
                   {sections.map((section, index) => (
                     <div key={index}>
-                      <div className="flex justify-between items-center">
+                      <div
+                        className="flex justify-between items-center cursor-pointer"
+                        onClick={() => toggleInputList(index)}
+                      >
                         <h2 className="text-[16px] py-4 font-medium">
                           {section.title}
                         </h2>
                         {/* arrow */}
                         <p
-                          onClick={() => toggleInputList(index)}
                           className="text-[#000000] flex items-center px-3 rounded-full underline cursor-pointer"
                           style={{
                             transform: section.showList
@@ -258,7 +257,7 @@ const Filter = () => {
                               id={`checked-checkbox-${index}-${itemIndex}`}
                               type="checkbox"
                               value=""
-                              className="w-4 h-4 accent-[#FF5956] bg-gray-100 border-gray-300 rounded"
+                              className="w-4 h-4 accent-[#FF5956] bg-gray-100 cursor-pointer border-gray-300 rounded"
                             />
                             <label
                               htmlFor={`checked-checkbox-${index}-${itemIndex}`}
@@ -293,7 +292,7 @@ const Filter = () => {
                               type="checkbox"
                               checked={checkboxes[i]}
                               onChange={() => handleCheckboxChange(i)}
-                              className="w-4 h-4 accent-[#FF5956] bg-gray-100 border-gray-300 rounded"
+                              className="w-4 h-4 accent-[#FF5956] bg-gray-100 cursor-pointer border-gray-300 rounded"
                             />
                             <div className="flex gap-1">
                               {stars.map((star, j) => (
