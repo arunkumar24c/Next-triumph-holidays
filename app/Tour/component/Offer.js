@@ -1,6 +1,6 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import React from 'react'
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
 
 const Offer = () => {
   const TourData = [
@@ -53,7 +53,6 @@ const Offer = () => {
       cities: "8 Cities",
       tourPlaces: "140+ Tour Places",
     },
-
   ];
   return (
     <div className="relative">
@@ -69,12 +68,11 @@ const Offer = () => {
           </div>
           <div className="grid grid-cols-1 xl:grid-cols-4 md:grid-cols-2 lg:grid-cols-3 gap-8 py-4 ">
             {TourData.map((tour, index) => (
-             
-                <div
-                  className="relative flex justify-center items-center "
-                  key={index}
-                >
-                   <Link href="/package">
+              <div
+                className="relative flex justify-center items-center "
+                key={index}
+              >
+                <Link href="/package">
                   <Image
                     src={tour.src}
                     width={270}
@@ -92,15 +90,9 @@ const Offer = () => {
                         {tour.tourPlaces}
                       </span>
                     </p>
-                    {/* <div>
-                    <button className="bg-[#FF5956] text-white px-4 py-2">
-                      Book now!
-                    </button>
-                  </div> */}
                   </div>
-                  </Link>
-                </div>
-              
+                </Link>
+              </div>
             ))}
           </div>
         </div>
@@ -116,6 +108,6 @@ const Offer = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Offer
+export default Offer;
