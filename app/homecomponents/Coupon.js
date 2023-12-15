@@ -131,13 +131,13 @@ const Coupon = () => {
 
         <div className="glider-arrows flex items-center justify-center gap-3 relative">
           <button
-            className="glider-arrow border xl:absolute -top-[22rem] -left-[40px] bg-[#FFF2F1] text-[#DC2626] shadow-lg px-5 py-5 rounded-full "
+            className="glider-arrow border xl:absolute -top-[22rem] -left-[40px] hover:bg-[#FF5956] hover:text-white bg-[#FFF2F1] text-[#DC2626] shadow-lg px-5 py-5 rounded-full "
             onClick={handleGliderPrev}
           >
             <GoArrowLeft size={32} />
           </button>
           <button
-            className="glider-arrow border xl:absolute  -top-[22rem] -right-[35px] bg-[#FFF2F1] text-[#DC2626] shadow-lg px-5 py-5 rounded-full "
+            className="glider-arrow border xl:absolute  -top-[22rem] -right-[35px] hover:bg-[#FF5956] hover:text-white bg-[#FFF2F1] text-[#DC2626] shadow-lg px-5 py-5 rounded-full "
             onClick={handleGliderNext}
           >
             <GoArrowRight size={32} />
