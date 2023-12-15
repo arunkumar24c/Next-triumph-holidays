@@ -111,6 +111,10 @@ const RegisterModal = ({ closeModal }) => {
   );
 };
 
+
+
+
+
 const Thanks = ({ closeModal }) => {
   return (
     <div className="flex items-center justify-center h-full">

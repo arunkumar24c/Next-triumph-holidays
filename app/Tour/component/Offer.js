@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react'
 
 const Offer = () => {
@@ -68,34 +69,36 @@ const Offer = () => {
           </div>
           <div className="grid grid-cols-1 xl:grid-cols-4 md:grid-cols-2 lg:grid-cols-3 gap-8 py-4 ">
             {TourData.map((tour, index) => (
-              <div
-                className="relative flex justify-center items-center "
-                key={index}
-              >
-                <Image
-                  src={tour.src}
-                  width={270}
-                  height={350}
-                  className=" "
-                  alt={tour.alt}
-                />
-                <div className="absolute bottom-0 flex gap-2 justify-center items-center flex-col py-4  ">
-                  <h2 className="text-[19px] font-semibold text-[white]">
-                    {tour.alt}
-                  </h2>
-                  <p className="text-[14px] text-white font-medium">
-                    {tour.cities}{" "}
-                    <span className=" italic font-light">
-                      {tour.tourPlaces}
-                    </span>
-                  </p>
-                  {/* <div>
+              <Link href="/package">
+                <div
+                  className="relative flex justify-center items-center "
+                  key={index}
+                >
+                  <Image
+                    src={tour.src}
+                    width={270}
+                    height={350}
+                    className=" "
+                    alt={tour.alt}
+                  />
+                  <div className="absolute bottom-0 flex gap-2 justify-center items-center flex-col py-4  ">
+                    <h2 className="text-[19px] font-semibold text-[white]">
+                      {tour.alt}
+                    </h2>
+                    <p className="text-[14px] text-white font-medium">
+                      {tour.cities}{" "}
+                      <span className=" italic font-light">
+                        {tour.tourPlaces}
+                      </span>
+                    </p>
+                    {/* <div>
                     <button className="bg-[#FF5956] text-white px-4 py-2">
                       Book now!
                     </button>
                   </div> */}
+                  </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>

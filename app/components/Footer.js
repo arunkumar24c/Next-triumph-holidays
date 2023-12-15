@@ -5,6 +5,7 @@ import { IoMdMail } from "react-icons/io";
 import { FaFacebook } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import { FaYoutube } from "react-icons/fa6";
 import { FaLink } from "react-icons/fa";
 import Image from "next/image";
@@ -21,7 +22,7 @@ const Footer = () => {
   return (
     <div className="bg-[#FFF2F1] relative">
       <div className="brand-container px-5 py-10">
-        <div className="grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-4 xl:justify-items-center lg:justify-items-center">
           {/* 1 */}
           <div>
             <h2 className="text-[#FF5956] text-[16px] font-semi-bold py-4">
@@ -89,7 +90,7 @@ const Footer = () => {
               </p>
               <p className="flex items-center gap-2 text-[#1e1e1e]">
                 <span>
-                  <FaTwitter />
+                  <FaXTwitter />
                 </span>
                 Twitter
               </p>
@@ -116,13 +117,13 @@ const Footer = () => {
         </div>
       </div>
       {/* float image  */}
-      <div className="fixed bottom-5 right-5">
+      <div className="fixed z-[99999] bottom-5 right-5 ">
         <Image
           src={"/assest/tour/arrow.png"}
           width={60}
           height={60}
           alt="img"
-          className="transform transition-transform duration-500 hover:translate-x-2 hover:translate-y-2"
+          className="transform transition-transform duration-500 hover:translate-x-2 hover:translate-y-2  rounded-full "
           onClick={scrollToTop}
         />
       </div>

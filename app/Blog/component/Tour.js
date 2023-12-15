@@ -142,14 +142,19 @@ const Tour = () => {
                       <p className="text-[18px] font-semibold">Moraine Lake</p>
 
                       <div className="relative">
-                        <div onClick={toggleMap}>
-                          <Image
-                            src="/assest/tour/up.png"
-                            width={24}
-                            height={24}
-                            className=""
-                            alt="imgs"
-                          />
+                        <div>
+                          <a
+                            href="https://www.google.com/maps/d/embed?mid=1B1lAsUpYFg82Je7XN1_cxRPf1UU&hl=en_US&ehbc=2E312F"
+                            target="_blank"
+                          >
+                            <Image
+                              src="/assest/tour/up.png"
+                              width={24}
+                              height={24}
+                              className=""
+                              alt="imgs"
+                            />
+                          </a>
                         </div>
 
                         {showMap && (
@@ -161,11 +166,11 @@ const Tour = () => {
                               >
                                 <IoMdClose size={35} />
                               </button>
-                              <iframe
+                              {/* <iframe
                                 src="https://www.google.com/maps/d/embed?mid=1B1lAsUpYFg82Je7XN1_cxRPf1UU&hl=en_US&ehbc=2E312F"
                                 width="640"
                                 height="480"
-                              ></iframe>
+                              ></iframe> */}
                             </div>
                           </div>
                         )}
@@ -199,14 +204,19 @@ const Tour = () => {
                       </p>
                       <p className="text-[18px] font-semibold">Moraine Lake</p>
                       <div className="relative">
-                        <div onClick={toggleMap}>
-                          <Image
-                            src="/assest/tour/up.png"
-                            width={24}
-                            height={24}
-                            className=""
-                            alt="imgs"
-                          />
+                        <div>
+                          <a
+                            href="https://www.google.com/maps/d/embed?mid=1B1lAsUpYFg82Je7XN1_cxRPf1UU&hl=en_US&ehbc=2E312F"
+                            target="_blank"
+                          >
+                            <Image
+                              src="/assest/tour/up.png"
+                              width={24}
+                              height={24}
+                              className=""
+                              alt="imgs"
+                            />
+                          </a>
                         </div>
 
                         {showMap && (
@@ -218,11 +228,11 @@ const Tour = () => {
                               >
                                 <IoMdClose size={35} />
                               </button>
-                              <iframe
+                              {/* <iframe
                                 src="https://www.google.com/maps/d/embed?mid=1B1lAsUpYFg82Je7XN1_cxRPf1UU&hl=en_US&ehbc=2E312F"
                                 width="640"
                                 height="480"
-                              ></iframe>
+                              ></iframe> */}
                             </div>
                           </div>
                         )}
@@ -318,9 +328,9 @@ const Tour = () => {
           </div>
         </div>
       </div>
-      <div className="-z-50 absolute  -top-[2rem] -right-[14rem] xl:block lg:block hidden ">
+      <div className="-z-50 absolute  top-[2rem] -right-[14rem] xl:block lg:block hidden ">
         <Image
-          src={"/assest/animate/plan.png"}
+          src={"/assest/animate/plane.png"}
           width={300}
           height={300}
           alt="img"

@@ -89,11 +89,11 @@ const Hero = () => {
                 yourself in a superior journey with us.
               </p>
               <div className="hidden xl:block">
-                <div className="bg-white shadow-lg flex flex-wrap gap-3 my-5 ">
+                <div className="bg-white shadow-lg px-3 py-2 flex flex-wrap gap-3  ">
                   {/* 1 */}
                   <div className="relative">
-                    <div className="bg-[#F5F5F5] m-4  shadow-md  cursor-pointer">
-                      <div className="flex justify-between gap-5 p-5 ">
+                    <div className="bg-[#F5F5F5] mx-2 shadow-md  cursor-pointer">
+                      <div className="flex justify-between gap-5 p-2 ">
                         <div onClick={openModal} className="cursor-pointer">
                           <p className="text-[#74747C] text-[14px]">
                             Departure
@@ -129,9 +129,9 @@ const Hero = () => {
                     </div>
                   </div>
                   {/* 2 */}
-                  <div className="bg-[#FF5956] m-4 flex justify-center items-center ">
+                  <div className="bg-[#FF5956]  flex justify-center items-center ">
                     <Link href="/Filter">
-                      <div className="px-11 py-5 ">
+                      <div className=" w-[55px] h-[55px] flex justify-center items-center">
                         <CiSearch size={25} className="text-white" />
                       </div>
                     </Link>

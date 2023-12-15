@@ -11,7 +11,7 @@ const Banner = () => {
         <div className="brand-container  px-5 py-10 mt-[6rem]">
           <div className="flex flex-col gap-10 justify-center items-center py-16">
             <Image
-              src="/assest/navbar/logo.png"
+              src="/assest/navbar/logo1.png"
               width={110}
               height={110}
               className="cursor-pointer"

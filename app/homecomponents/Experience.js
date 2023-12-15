@@ -79,9 +79,9 @@ const Experience = () => {
             </div>
           </div>
         </div>
-        <div className="-z-50 absolute  top-[10rem] -right-[12rem] xl:block lg:block hidden ">
+        <div className="-z-50 absolute  top-[12rem] -right-[12rem] xl:block lg:block hidden ">
           <Image
-            src={"/assest/animate/plan.png"}
+            src={"/assest/animate/plane.png"}
             width={300}
             height={300}
             alt="img"

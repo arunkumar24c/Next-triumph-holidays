@@ -5,6 +5,7 @@ import Glider from "react-glider";
 import "glider-js/glider.min.css";
 import { FaStar } from "react-icons/fa";
 import { GoArrowRight, GoArrowLeft } from "react-icons/go";
+import Link from "next/link";
 
 
 const tripsData = [
@@ -151,9 +152,11 @@ const Package = () => {
                       </p>
                     </div>
                     <div className="flex justify-center py-2">
-                      <button className="px-11 py-4 font-medium text-[14px] text-white bg-[#FF5956] ">
-                        Explore
-                      </button>
+                      <Link href="/package">
+                        <button className="px-11 py-4 font-medium text-[14px] text-white bg-[#FF5956] ">
+                          Explore
+                        </button>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -162,20 +165,19 @@ const Package = () => {
           </Glider>
           <div className="glider-arrows flex items-center justify-center gap-3 relative">
             <button
-              className="glider-arrow border xl:absolute -top-[17rem] -left-[40px] bg-white shadow-lg px-5 py-5 rounded-full "
+              className="glider-arrow border xl:absolute -top-[17rem] -left-[40px]  hover:bg-[#FF5956] hover:text-white bg-[#FFF2F1] text-[#DC2626] shadow-lg px-5 py-5 rounded-full "
               onClick={handleGliderPrev}
             >
               <GoArrowLeft size={32} />
             </button>
             <button
-              className="glider-arrow border xl:absolute -top-[17rem] -right-[35px] bg-white shadow-lg px-5 py-5 rounded-full "
+              className="glider-arrow border xl:absolute -top-[17rem] -right-[35px]  hover:bg-[#FF5956] hover:text-white bg-[#FFF2F1] text-[#DC2626] shadow-lg px-5 py-5 rounded-full "
               onClick={handleGliderNext}
             >
               <GoArrowRight size={32} />
             </button>
           </div>
         </div>
-        
       </div>
     </div>
   );

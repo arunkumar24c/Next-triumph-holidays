@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const places = [
@@ -71,13 +72,22 @@ const Escape = () => {
                 <p className="text-white">{place.description}</p>
                 <p className="text-white">{place.para}</p>
                 <div>
-                  <button className="px-5 py-2 font-medium text-[14px] bg-white text-[#FF5956] rounded-md">
-                    Book now!
-                  </button>
+                  <Link href="/package">
+                    <button className="px-5 py-2 font-medium text-[14px] bg-white text-[#FF5956] rounded-md">
+                      Book now!
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
           ))}
+        </div>
+        <div className="flex justify-center py-2">
+          <Link href="/Tour">
+            <button className="px-11 py-4 font-medium text-[14px] text-white bg-[#FF5956] ">
+              Explore
+            </button>
+          </Link>
         </div>
       </div>
       <div className="-z-50 absolute  top-[10rem] -left-[12rem] rotate-180 xl:block lg:block hidden ">

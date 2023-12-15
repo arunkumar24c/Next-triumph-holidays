@@ -121,9 +121,9 @@ const Blog = () => {
           ))}
         </Glider>
         <div className="flex justify-center py-5 ">
-          <Link href="/Blog">
+          <Link href="/Tour">
             <button className="bg-[#FF5956] text-[white] px-8 py-2 ">
-              Explore
+              Explore all
             </button>
           </Link>
         </div>
@@ -169,7 +169,7 @@ const PopularDestinationCard = ({}) => {
             We denounce with righteous indignation and dislike men who are so
             beguiled and demoralized by the charms of pleasure of the We
             denounce with righteous indignation who are so beguiled and
-            demoralized by the pleasure of theWe denounce with brand d
+            demoralized by the pleasure of the We denounce with brand d
           </p>
           <div className="bg-[#FFF2F1] flex justify-end">
             <Link href="/Blog">

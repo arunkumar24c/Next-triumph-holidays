@@ -87,9 +87,9 @@ const Tour = ({ closeModal }) => {
                   <Image
                     src={selectedImage.src}
                     width={300}
-                    height={600}
+                    height={400}
                     alt="img"
-                    className="w-full h-[600px] py-2  rounded-md"
+                    className="w-full h-[400px] py-2  rounded-md"
                   />
                   {/* small image */}
                   <div>

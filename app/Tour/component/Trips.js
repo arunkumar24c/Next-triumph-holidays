@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 import { FaStar } from "react-icons/fa";
@@ -77,9 +78,11 @@ const Trips = () => {
                   </p>
                 </div>
                 <div className="flex justify-center py-2">
-                  <button className="px-11 py-4 font-medium text-[14px] text-white bg-[#FF5956] ">
-                    Explore
-                  </button>
+                  <Link href="/package">
+                    <button className="px-11 py-4 font-medium text-[14px] text-white bg-[#FF5956] ">
+                      Explore
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
