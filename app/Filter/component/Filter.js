@@ -6,8 +6,7 @@ import { IoLocationOutline } from "react-icons/io5";
 import {
   IoIosArrowDown,
   IoIosArrowForward,
-  IoIosArrowRoundDown,
-  IoIosArrowRoundUp,
+  
   IoIosArrowUp,
 } from "react-icons/io";
 import { FaLongArrowAltLeft, FaRegStar } from "react-icons/fa";
@@ -162,12 +161,12 @@ const Filter = () => {
                   </p>
                 </div>
                 {/* 2nd */}
-                <div className="flex justify-between ">
+                {/* <div className="flex justify-between ">
                   <h2 className="text-[18px] font-medium">Location Details</h2>
                   <p className=" text-[#FF5956] flex items-center px-3 rounded-full underline cursor-pointer">
                     Change
                   </p>
-                </div>
+                </div> */}
                 {/* 3rd */}
                 <div className="flex flex-col gap-3">
                   <p className="text-[12px] text-[#6C6C6C]">Starting Point</p>

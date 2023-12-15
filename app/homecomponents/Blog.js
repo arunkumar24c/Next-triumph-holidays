@@ -10,9 +10,10 @@ import Link from "next/link";
 const testimonialData = [
   {
     id: 1,
-    img:"",
+    img: "",
     names: "Weekend Tour",
-    cities: " We denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the We denounce with righteous indignation who are so beguiled and demoralized by the pleasure of theWe denounce with brand d",
+    cities:
+      " We denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the We denounce with righteous indignation who are so beguiled and demoralized by the pleasure of theWe denounce with brand d",
     tour: "140+ Tour place",
   },
   {
@@ -145,7 +146,7 @@ const Blog = () => {
   );
 };
 
-const PopularDestinationCard = ({  }) => {
+const PopularDestinationCard = ({}) => {
   return (
     <div className="brand-container py-5  ">
       <div className="flex flex-col gap-3 shadow-md bg-white">
@@ -171,9 +172,11 @@ const PopularDestinationCard = ({  }) => {
             demoralized by the pleasure of theWe denounce with brand d
           </p>
           <div className="bg-[#FFF2F1] flex justify-end">
-            <p className=" py-3 px-3 flex text-[#F96768] items-center gap-1">
-              View blog <IoIosArrowForward className="text-[#F96768]" />
-            </p>
+            <Link href="/Blog">
+              <p className=" py-3 px-3 flex text-[#F96768] items-center gap-1">
+                View blog <IoIosArrowForward className="text-[#F96768]" />
+              </p>
+            </Link>
           </div>
         </div>
       </div>

@@ -34,7 +34,7 @@ const closeModal = () => {
               <input
                 type="search"
                 placeholder="Search your Designation..."
-                className="w-full bg-[#f3f3f3] px-9 py-3 rounded-full cursor-pointer"
+                className="w-full bg-[#f3f3f3] px-9 py-3 rounded-full cursor-pointer outline-none"
               />
             </Link>
           </div>
