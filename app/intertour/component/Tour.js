@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Tour = () => {
@@ -119,13 +120,15 @@ const Tour = () => {
                 className="relative flex justify-center items-center"
                 key={index}
               >
-                <Image
-                  src={tour.src}
-                  width={270}
-                  height={350}
-                  className=""
-                  alt={tour.alt}
-                />
+                <Link href="/details">
+                  <Image
+                    src={tour.src}
+                    width={270}
+                    height={350}
+                    className=""
+                    alt={tour.alt}
+                  />
+                </Link>
                 <div
                   className="absolute bottom-0 flex gap-2 justify-center items-center flex-col py-4"
                   style={{

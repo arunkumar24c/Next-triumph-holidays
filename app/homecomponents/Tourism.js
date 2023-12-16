@@ -99,7 +99,7 @@ const Tourism = () => {
           <div className="bg-[#FF5956BF] ">
             <div className="flex flex-col gap-5 justify-center items-center text-center py-16 ">
               <h1 className="text-[40px] w-full   font-bold text-[#f8f42e] relative inline-block overflow-hidden px-5">
-                Explore Indian Tourism
+                Explore World Tourism
               </h1>
               <p className="text-white">
                 Your portal to extraordinary marvels around the globe.

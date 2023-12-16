@@ -160,9 +160,9 @@ const PopularDestinationCard = ({ names, cities, tour }) => {
                 {tour}
               </p>
             </div>
-            <Link href="/package">
+            <Link href="/german">
               <button
-                className={`px-5 py-2.5 font-semibold text-[14px] text-white bg-[#FF5956]  transition-transform duration-300 transform ${
+                className={`px-6 py-2.5 font-medium text-[14px] text-white bg-[#FF5956]  transition-transform duration-300 transform ${
                   hovered ? "translate-y-0" : "translate-y-[5rem]"
                 }`}
                 style={{

@@ -172,7 +172,7 @@ const PopularDestinationCard = ({}) => {
             demoralized by the pleasure of the We denounce with brand d
           </p>
           <div className="bg-[#FFF2F1] flex justify-end">
-            <Link href="/Blog">
+            <Link href="/Blogs">
               <p className=" py-3 px-3 flex text-[#F96768] items-center gap-1">
                 View blog <IoIosArrowForward className="text-[#F96768]" />
               </p>

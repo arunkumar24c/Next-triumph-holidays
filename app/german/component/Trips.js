@@ -81,12 +81,12 @@ const tripsData = [
 
 const Trips = () => {
   return (
-    <div className="brand-container py-5 relative">
+    <div className="brand-container py-5">
       <div className="flex flex-col gap-6 justify-center items-center py-10">
         <div>
           <h2 className="text-[14px] text-center font-medium">Take a Look</h2>
           <h1 className="text-[40px] text-center font-bold text-black">
-            Featured Abroad Trips
+            What German Offers
           </h1>
         </div>
         <div className="grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 py-10 gap-4">
@@ -135,24 +135,6 @@ const Trips = () => {
             </div>
           ))}
         </div>
-      </div>
-      <div className="-z-50 absolute  top-[10rem] -right-[12rem] xl:block lg:block hidden ">
-        <Image
-          src={"/assest/animate/frame.png"}
-          width={300}
-          height={300}
-          alt="img"
-          className=" "
-        />
-      </div>
-      <div className="-z-50 absolute  -bottom-[12rem] -left-[18rem] rotate-180 xl:block lg:block hidden ">
-        <Image
-          src={"/assest/animate/plane.png"}
-          width={300}
-          height={300}
-          alt="img"
-          className="animate-spin-half-and-back "
-        />
       </div>
     </div>
   );

@@ -55,8 +55,8 @@ const Sliderss = () => {
   return (
     <div className="w-full px-5 py-10">
       <div className=" mb-8">
-        <h2 className="text-[24px] font-bold text-center">Take a Look</h2>
-        <h1 className="text-[24px] font-bold text-center">What People say</h1>
+        <h2 className="text-[14px] font-medium text-center">TAKE A LOOK </h2>
+        <h1 className="text-[40px] font-bold text-center">What People say</h1>
       </div>
 
       <Slider {...settings}>

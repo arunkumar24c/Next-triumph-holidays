@@ -12,8 +12,9 @@ import {
 import { FaLongArrowAltLeft, FaRegStar } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
 import Image from "next/image";
-import { Link } from "react-scroll";
+
 import { VscFilterFilled } from "react-icons/vsc";
+import Link from "next/link";
 
 const Filter = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -358,7 +359,7 @@ const Filter = () => {
                     </p>
                   </div>
                   <div className="flex  py-2">
-                    <Link href="/package">
+                    <Link href="/details">
                       <button className="px-11 py-4 font-medium text-[14px] text-white bg-[#FF5956] ">
                         Explore
                       </button>
@@ -396,10 +397,12 @@ const Filter = () => {
                     with brand d
                   </p>
                   <div className="py-4 ">
-                    <button className="bg-[#FFF2F1] py-3 px-3 flex text-[#F96768] items-center gap-1">
-                      View Experience{" "}
-                      <IoIosArrowForward className="text-[#F96768]" />
-                    </button>
+                    <Link href="/">
+                      <button className="bg-[#FFF2F1] py-3 px-3 flex text-[#F96768] items-center gap-1">
+                        View Experience{" "}
+                        <IoIosArrowForward className="text-[#F96768]" />
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -432,10 +435,12 @@ const Filter = () => {
                     with brand d
                   </p>
                   <div className="py-4 ">
-                    <button className="bg-[#FFF2F1] py-3 px-3 flex text-[#F96768] items-center gap-1">
-                      View Experience{" "}
-                      <IoIosArrowForward className="text-[#F96768]" />
-                    </button>
+                    <Link href="/">
+                      <button className="bg-[#FFF2F1] py-3 px-3 flex text-[#F96768] items-center gap-1">
+                        View Experience{" "}
+                        <IoIosArrowForward className="text-[#F96768]" />
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -481,9 +486,11 @@ const Filter = () => {
                     </p>
                   </div>
                   <div className="flex  py-2">
-                    <button className="px-11 py-4 font-medium text-[14px] text-white bg-[#FF5956] ">
-                      Explore
-                    </button>
+                    <Link href="/details">
+                      <button className="px-11 py-4 font-medium text-[14px] text-white bg-[#FF5956] ">
+                        Explore
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -529,7 +536,7 @@ const Filter = () => {
                     </p>
                   </div>
                   <div className="flex  py-2">
-                    <Link href="/package">
+                    <Link href="/details">
                       <button className="px-11 py-4 font-medium text-[14px] text-white bg-[#FF5956] ">
                         Explore
                       </button>
@@ -579,7 +586,7 @@ const Filter = () => {
                     </p>
                   </div>
                   <div className="flex  py-2">
-                    <Link href="/package">
+                    <Link href="/details">
                       <button className="px-11 py-4 font-medium text-[14px] text-white bg-[#FF5956] ">
                         Explore
                       </button>

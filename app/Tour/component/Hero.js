@@ -1,4 +1,5 @@
 "use client"
+import Link from 'next/link';
 import React, { useEffect, useState } from 'react'
 
 const Hero = () => {
@@ -42,27 +43,31 @@ const [selectedButton, setSelectedButton] = useState("international");
             <div>
               <div className="flex px-1 py-1 bg-white rounded-full">
                 {/* select button */}
-                <p
-                  className={`${
-                    selectedButton === "international"
-                      ? "bg-[#FF5956] text-white"
-                      : "bg-white  text-[#FF5956]"
-                  } px-5 py-2 text-[14px] rounded-full cursor-pointer`}
-                  onClick={() => handleButtonClick("international")}
-                >
-                  International Tours
-                </p>
+                <Link href="/Tour">
+                  <p
+                    className={`${
+                      selectedButton === "international"
+                        ? "bg-[#FF5956] text-white"
+                        : "bg-white  text-[#FF5956]"
+                    } px-5 py-2 text-[14px] rounded-full cursor-pointer`}
+                    onClick={() => handleButtonClick("international")}
+                  >
+                    International Tours
+                  </p>
+                </Link>
                 {/* non select button */}
-                <p
-                  className={`${
-                    selectedButton === "domestic"
-                      ? "bg-[#FF5956] text-white"
-                      : "bg-white  text-[#FF5956]"
-                  } px-5 py-2 rounded-full text-[14px] cursor-pointer`}
-                  onClick={() => handleButtonClick("domestic")}
-                >
-                  Domestic Tours
-                </p>
+                <Link href="/Worldtour">
+                  <p
+                    className={`${
+                      selectedButton === "domestic"
+                        ? "bg-[#FF5956] text-white"
+                        : "bg-white  text-[#FF5956]"
+                    } px-5 py-2 rounded-full text-[14px] cursor-pointer`}
+                    onClick={() => handleButtonClick("domestic")}
+                  >
+                    Domestic Tours
+                  </p>
+                </Link>
               </div>
             </div>
           </div>

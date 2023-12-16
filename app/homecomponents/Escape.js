@@ -47,7 +47,7 @@ const Escape = () => {
       <div className="flex flex-col gap-6 justify-center items-center">
         <div>
           <h2 className="text-[14px] text-center text-[#000000] font-medium">
-            Find your{" "}
+            FIND YOUR{" "}
           </h2>
           <h1 className="text-[40px] text-black font-bold leading-normal text-center">
             Best Escape Place
@@ -72,7 +72,7 @@ const Escape = () => {
                 <p className="text-white">{place.description}</p>
                 <p className="text-white">{place.para}</p>
                 <div>
-                  <Link href="/package">
+                  <Link href="/thailand">
                     <button className="px-5 py-2 font-medium text-[14px] bg-white text-[#FF5956] rounded-md">
                       Book now!
                     </button>
@@ -90,9 +90,9 @@ const Escape = () => {
           </Link>
         </div>
       </div>
-      <div className="-z-50 absolute  top-[10rem] -left-[12rem] rotate-180 xl:block lg:block hidden ">
+      <div className="-z-50 absolute  top-[10rem] -left-[16rem] rotate-180 xl:block lg:block hidden ">
         <Image
-          src={"/assest/animate/plan.png"}
+          src={"/assest/animate/plane.png"}
           width={300}
           height={300}
           alt="img"

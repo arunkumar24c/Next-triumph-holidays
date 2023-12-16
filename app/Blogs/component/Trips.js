@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 
 import { FaStar } from "react-icons/fa";
+import { IoIosArrowForward, IoIosArrowRoundForward } from "react-icons/io";
 
 const tripsData = [
   {
@@ -81,78 +82,50 @@ const tripsData = [
 
 const Trips = () => {
   return (
-    <div className="brand-container py-5 relative">
+    <div className="brand-container py-5">
       <div className="flex flex-col gap-6 justify-center items-center py-10">
         <div>
           <h2 className="text-[14px] text-center font-medium">Take a Look</h2>
           <h1 className="text-[40px] text-center font-bold text-black">
-            Featured Abroad Trips
+            Read out the Experience
           </h1>
         </div>
         <div className="grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 py-10 gap-4">
           {tripsData.map((trip, index) => (
-            <div key={index} className="flex flex-col shadow-md gap-4">
-              <Image
-                src={trip.imgSrc}
-                width={400}
-                height={250}
-                className="w-full"
-                alt="imgs"
-              />
-              <div className="px-4 py-5">
-                <div className="flex justify-between gap-2">
-                  <h1 className="text-[18px] text-[#3C3C3C] font-semibold ">
-                    {trip.title}
-                  </h1>
+            <div className="flex flex-col gap-3 shadow-md bg-white">
+              {/* left */}
+              <div className="">
+                <Image
+                  src="/assest/blog/img1.png"
+                  width={374}
+                  height={225}
+                  className="cursor-pointer w-full h-auto  "
+                  alt="imgs"
+                />
+                <div className=" bg-[#FF5956BF]">
+                  <p className="text-white text-center py-3">Explore Myself</p>
                 </div>
-                <p className="text-[14px] py-1 font-normal">
-                  <span className="text-[#FF5956] text-[14px] font-medium">
-                    {trip.duration}
-                  </span>{" "}
+              </div>
+              {/* right */}
+              <div>
+                <p className="text-[#4B4B4B] px-1">
+                  We denounce with righteous indignation and dislike men who are
+                  so beguiled and demoralized by the charms of pleasure of the
+                  We denounce with righteous indignation who are so beguiled and
+                  demoralized by the pleasure of the We denounce with brand d
                 </p>
-                <p className="text-[14px] font-medium leading-normal text-[#3c3c3c] pb-2">
-                  {trip.description}
-                </p>
-                <div className="flex items-center gap-3">
-                  <p className="flex gap-1 items-center">
-                    <span>
-                      <FaStar size={25} className="text-[#F1C40F]" />
-                    </span>
-                    4.6
-                  </p>
-                  <p className="font-light text-[#6C6C6C] text-[14px]">
-                    ( 96 Reviews)
-                  </p>
-                </div>
-                <div className="flex justify-center py-2">
-                  <Link href="/details">
-                    <button className="px-11 py-4 font-medium text-[14px] text-white bg-[#FF5956] ">
-                      Explore
-                    </button>
+                <div className="bg-[#FFF2F1] flex justify-end">
+                  <Link href="/Blog">
+                    <p className=" py-3 px-3 flex text-[#F96768] items-center gap-1">
+                      View blog{" "}
+                      <IoIosArrowRoundForward className="text-[#F96768]" />
+                    </p>
                   </Link>
                 </div>
               </div>
             </div>
           ))}
         </div>
-      </div>
-      <div className="-z-50 absolute  top-[10rem] -right-[12rem] xl:block lg:block hidden ">
-        <Image
-          src={"/assest/animate/frame.png"}
-          width={300}
-          height={300}
-          alt="img"
-          className=" "
-        />
-      </div>
-      <div className="-z-50 absolute  -bottom-[12rem] -left-[18rem] rotate-180 xl:block lg:block hidden ">
-        <Image
-          src={"/assest/animate/plane.png"}
-          width={300}
-          height={300}
-          alt="img"
-          className="animate-spin-half-and-back "
-        />
       </div>
     </div>
   );

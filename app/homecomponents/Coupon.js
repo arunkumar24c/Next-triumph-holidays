@@ -114,10 +114,10 @@ const Coupon = () => {
         >
           {testimonialData.map((testimonial) => (
             <div className="px-2" key={testimonial.id}>
-              
+              <Link href="/intertour">
                 {" "}
                 <PopularDestinationCard {...testimonial} />
-             
+              </Link>
             </div>
           ))}
         </Glider>

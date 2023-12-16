@@ -81,9 +81,9 @@ const Tour = ({ closeModal }) => {
                   <Image
                     src={selectedImage.src}
                     width={300}
-                    height={600}
+                    height={400}
                     alt="img"
-                    className="w-full h-[600px] py-2  rounded-md"
+                    className="w-full h-[400px] py-2  rounded-md"
                   />
                   {/* small image */}
                   <div>
@@ -199,7 +199,7 @@ const Tour = ({ closeModal }) => {
                     <GoDot className="" size={35} />
                   </p>
                   <div className="flex flex-col gap-2">
-                    <h1 className="text-[18px] ">Deluxe Package</h1>
+                    <h1 className="text-[18px] ">Deluxe Gold Package</h1>
                     <p className="text-[14px] font-normal">
                       We can write a small description about the package here.
                     </p>
@@ -212,9 +212,9 @@ const Tour = ({ closeModal }) => {
                   </div>
                 </div>
                 <div>
-                  <h2 className="text-[14px] line-through">INR 73,860</h2>
+                  <h2 className="text-[14px] line-through">INR 93,860</h2>
                   <h2 className="text-[24px] font-semibold text-[#ff5956]">
-                    INR 56,815
+                    INR 76,815
                   </h2>
                   <p className="text-[12px] text-[#9CA3AF]">Per Adult</p>
                 </div>

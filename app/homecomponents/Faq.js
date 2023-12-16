@@ -39,7 +39,7 @@ const Faq = () => {
   return (
     <>
       <div className="mx-auto container py-10" id="faq">
-        <h1 className="text-[black] text-4xl text-center py-10">
+        <h1 className="text-[black] text-[40px] text-center py-10">
           FAQs
         </h1>
         <div className="">
@@ -65,7 +65,7 @@ const FaqCard = ({ question, answer }) => {
       <div className="brand-container px-2">
         <div
           onClick={toggleOpen}
-          className="flex cursor-pointer bg-[pink] items-center gap-6  px-5  w-full"
+          className="flex cursor-pointer bg-[#FFF2F1] items-center gap-6  px-5  w-full"
         >
           <AiOutlineClose
             size={20}
@@ -84,7 +84,7 @@ const FaqCard = ({ question, answer }) => {
               : "max-h-0 transition-max-h duration-700  ease-in-out overflow-hidden"
           }`}
         >
-          <p className="transition-transform leading-relaxed duration-500 text-[14px] text-[black] font-medium px-5 py-8 bg-[pink]">
+          <p className="transition-transform leading-relaxed duration-500 text-[14px] text-[black] font-medium px-5 py-8 bg-[#FFF2F1]">
             {answer}
           </p>
         </div>
