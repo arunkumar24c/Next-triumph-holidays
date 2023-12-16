@@ -358,9 +358,11 @@ const Filter = () => {
                     </p>
                   </div>
                   <div className="flex  py-2">
-                    <button className="px-11 py-4 font-medium text-[14px] text-white bg-[#FF5956] ">
-                      Explore
-                    </button>
+                    <Link href="/package">
+                      <button className="px-11 py-4 font-medium text-[14px] text-white bg-[#FF5956] ">
+                        Explore
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -383,6 +385,9 @@ const Filter = () => {
                 </div>
                 {/* right */}
                 <div className="w-full">
+                  <h1 className="text-[18px] pb-2 text-[#3C3C3C] font-semibold ">
+                    India Beautiful Places
+                  </h1>
                   <p className="text-[#000000] leading-normal text-justify text-[14px] px-1">
                     We denounce with righteous indignation and dislike men who
                     are so beguiled and demoralized by the charms of pleasure of
@@ -416,6 +421,9 @@ const Filter = () => {
                 </div>
                 {/* right */}
                 <div className="w-full">
+                  <h1 className="text-[18px] pb-2 text-[#3C3C3C] font-semibold ">
+                    India Beautiful Places
+                  </h1>
                   <p className="text-[#000000] leading-normal text-justify text-[14px] px-1">
                     We denounce with righteous indignation and dislike men who
                     are so beguiled and demoralized by the charms of pleasure of
@@ -521,9 +529,11 @@ const Filter = () => {
                     </p>
                   </div>
                   <div className="flex  py-2">
-                    <button className="px-11 py-4 font-medium text-[14px] text-white bg-[#FF5956] ">
-                      Explore
-                    </button>
+                    <Link href="/package">
+                      <button className="px-11 py-4 font-medium text-[14px] text-white bg-[#FF5956] ">
+                        Explore
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -569,9 +579,11 @@ const Filter = () => {
                     </p>
                   </div>
                   <div className="flex  py-2">
-                    <button className="px-11 py-4 font-medium text-[14px] text-white bg-[#FF5956] ">
-                      Explore
-                    </button>
+                    <Link href="/package">
+                      <button className="px-11 py-4 font-medium text-[14px] text-white bg-[#FF5956] ">
+                        Explore
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>

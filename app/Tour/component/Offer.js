@@ -80,11 +80,11 @@ const Offer = () => {
                     className=" "
                     alt={tour.alt}
                   />
-                  <div className="absolute bottom-0 flex gap-2 justify-center items-center flex-col py-4  ">
-                    <h2 className="text-[19px] font-semibold text-[white]">
+                  <div className="absolute bottom-0 left-8 flex gap-2 justify-center items-center flex-col py-4  ">
+                    <h2 className="text-[19px] text-center font-semibold text-[white]">
                       {tour.alt}
                     </h2>
-                    <p className="text-[14px] text-white font-medium">
+                    <p className="text-[14px] text-center text-white font-medium">
                       {tour.cities}{" "}
                       <span className=" italic font-light">
                         {tour.tourPlaces}
