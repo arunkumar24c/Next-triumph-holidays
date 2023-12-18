@@ -1,5 +1,5 @@
 "use client";
-import React, {  useRef, useCallback } from "react";
+import React, { useRef, useCallback } from "react";
 import Glider from "react-glider";
 import { GoArrowRight, GoArrowLeft } from "react-icons/go";
 import { FiChevronDown } from "react-icons/fi";
@@ -40,7 +40,7 @@ const testimonialData = [
   },
 ];
 
-const Attraction = () => {
+const Experience = () => {
   const gliderRef = useRef(null);
 
   const handleGliderNext = useCallback(() => {
@@ -101,7 +101,7 @@ const Attraction = () => {
           </div>
         </div>
       </div>
-      <h1 className="text-center py-1 pt-10 text-[40px]">Attractions List</h1>
+      <h1 className="text-center py-1 pt-10 text-[40px]">Experience List</h1>
 
       <div className=" container mx-auto mb-5 py-3">
         <Glider
@@ -212,4 +212,4 @@ const PopularDestinationCard = ({ names, cities, tour }) => {
   );
 };
 
-export default Attraction;
+export default Experience;

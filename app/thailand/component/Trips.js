@@ -125,7 +125,7 @@ const Trips = () => {
                   </p>
                 </div>
                 <div className="flex justify-center py-2">
-                  <Link href="/details">
+                  <Link href="/experience">
                     <button className="px-11 py-4 font-medium text-[14px] text-white bg-[#FF5956] ">
                       Explore
                     </button>

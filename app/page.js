@@ -16,6 +16,8 @@ import Testimonials from "./homecomponents/Testimonial";
 import Banner from "./homecomponents/Banner";
 import Gallery from "./homecomponents/Gallery";
 import Design from "./homecomponents/Design";
+import Attraction from "./homecomponents/Attraction";
+
 
 
 export const metadata = {
@@ -35,8 +37,9 @@ const page = () => {
       <Location />
       {/* <Banner /> */}
       <Coupon />
-      {/* <Gallery /> */}
-      {/* <Design /> */}
+      <Attraction/>
+      {/* <Gallery />
+      <Design /> */}
       <Blog />
 
       <Experience />

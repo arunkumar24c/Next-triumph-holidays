@@ -10,12 +10,12 @@ const Banner = () => {
     dots: false,
 
     arrows: false,
-    speed: 4000,
+    speed: 6000,
     slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: 0,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 6000,
     cssEase: "linear",
 
     responsive: [

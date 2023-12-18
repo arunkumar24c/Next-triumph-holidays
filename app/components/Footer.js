@@ -123,7 +123,7 @@ const Footer = () => {
           width={60}
           height={60}
           alt="img"
-          className="transform transition-transform duration-500 hover:translate-x-2 hover:translate-y-2  rounded-full "
+          className="transform transition-transform duration-500 hover:translate-x-2 hover:translate-y-2 cursor-pointer rounded-full "
           onClick={scrollToTop}
         />
       </div>
@@ -132,3 +132,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
