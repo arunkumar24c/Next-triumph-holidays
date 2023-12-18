@@ -13,9 +13,7 @@ import Blog from "./homecomponents/Blog";
 import Newsletter from "./homecomponents/Newsletter";
 import Triumph from "./homecomponents/Triumph";
 import Testimonials from "./homecomponents/Testimonial";
-import Banner from "./homecomponents/Banner";
-import Gallery from "./homecomponents/Gallery";
-import Design from "./homecomponents/Design";
+
 import Attraction from "./homecomponents/Attraction";
 
 
