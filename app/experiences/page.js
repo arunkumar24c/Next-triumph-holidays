@@ -1,6 +1,7 @@
 import React from 'react'
 import Banner from './component/Banner'
-import Experience from './component/experience'
+import Experience from './component/Experience'
+
 
 const page = () => {
   return (
