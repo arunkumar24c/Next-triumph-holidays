@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { HiPhoneMissedCall } from "react-icons/hi";
 import { FaWhatsapp } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
@@ -11,14 +11,13 @@ import { FaLink } from "react-icons/fa";
 import Image from "next/image";
 import React, { useRef } from "react";
 
-
 const Footer = () => {
-   const scrollToTop = () => {
-     window.scrollTo({
-       top: 0,
-       behavior: "smooth",
-     });
-   };
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <div className="bg-[#FFF2F1] relative">
       <div className="brand-container px-5 py-10">
@@ -132,4 +131,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
