@@ -12,7 +12,7 @@ const Gift = ({ closeModal }) => {
 
 
   return (
-    <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center z-50 bg-gray-800 bg-opacity-50">
+    <div className="fixed top-[2rem] left-0 w-full h-full flex items-center justify-center z-50 bg-gray-800 bg-opacity-50">
       <div className="bg-white w-[350px] xl:w-[550px] lg:w-[550px] md:w-[450px] rounded-md">
         {submitted ? (
           <Thanks closeModal={closeModal} />
