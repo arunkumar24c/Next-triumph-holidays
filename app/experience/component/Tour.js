@@ -10,7 +10,9 @@ import { GoChevronDown, GoChevronUp, GoDot } from "react-icons/go";
 import { CiStar } from "react-icons/ci";
 import Faq from "./Faq";
 import { IoMdClose } from "react-icons/io";
-
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+import Sliders from "@/app/details/component/Sliders";
 const Tour = ({ closeModal }) => {
   const ImageData = [
     { src: "/assest/tour/img1.png", alt: "Image 1" },
@@ -42,11 +44,14 @@ const Tour = ({ closeModal }) => {
   const handleSubmit = () => {
     setSubmitted(true);
   };
-   const [showMap, setShowMap] = useState(false);
+  const [showMap, setShowMap] = useState(false);
 
-   const toggleMap = () => {
-     setShowMap(!showMap);
-   };
+  const toggleMap = () => {
+    setShowMap(!showMap);
+  };
+
+  const [startDate, setStartDate] = useState(new Date());
+
   return (
     <div>
       <div className="brand-container">
@@ -199,6 +204,71 @@ const Tour = ({ closeModal }) => {
             </div>
             {/* faq */}
             <Faq />
+            {/* inclusion and exclusion  */}
+            <div className="shadow-md border rounded-md px-5 py-5">
+              <div className="flex flex-col gap-4">
+                <h1 className="text-[18px]">INCLUSION</h1>
+                <div>
+                  <p className="py-5 text-[14px] font-normal flex items-center gap-3">
+                    <GoDotFill className=" text-[#FF5956]" /> International AIR
+                    tickets (check with our staff to verify if your package
+                    includes flight tickets)
+                  </p>
+                  <p className="pb-5 text-[14px] font-normal flex items-center gap-3">
+                    <GoDotFill className=" text-[#FF5956]" />
+                    Daily Buffet breakfasts
+                  </p>
+                  <p className="pb-5 text-[14px] font-normal flex items-center gap-3">
+                    <GoDotFill className=" text-[#FF5956]" />
+                    Meals as mentioned in the itinerary
+                  </p>
+                  <p className="pb-5 text-[14px] font-normal flex items-center gap-3">
+                    <GoDotFill className=" text-[#FF5956]" />
+                    Airport Transfers & Sightseeing transfers as mentioned in
+                    the itinerary
+                  </p>
+                  <p className="pb-5 text-[14px] font-normal flex items-center gap-3">
+                    <GoDotFill className=" text-[#FF5956]" /> Sightseeing as
+                    mentioned in the itinerary
+                  </p>
+                  <p className="pb-5 text-[14px] font-normal flex items-center gap-3">
+                    <GoDotFill className=" text-[#FF5956]" /> Regional language
+                    speaking assistance on customer support
+                  </p>
+                </div>
+              </div>
+              <div className="flex flex-col gap-4">
+                <h1 className="text-[18px]">EXCLUSION</h1>
+                <div>
+                  <p className="py-5 text-[14px] font-normal flex items-center gap-3">
+                    <GoDotFill className=" text-[#FF5956]" />
+                    Cost of Meals other than mention above
+                  </p>
+                  <p className="pb-5 text-[14px] font-normal flex items-center gap-3">
+                    <GoDotFill className=" text-[#FF5956]" /> Any items or
+                    services not specified in the itinerary under HOLIDAY PRICE
+                    INCLUDES header
+                  </p>
+                  <p className="pb-5 text-[14px] font-normal flex items-center gap-3">
+                    <GoDotFill className=" text-[#FF5956]" /> Cost of foreign
+                    exchanges for personal use
+                  </p>
+                  <p className="pb-5 text-[14px] font-normal flex items-center gap-3">
+                    <GoDotFill className=" text-[#FF5956]" />
+                    Airport Transfers & Sightseeing transfers as mentioned in
+                    the itinerary
+                  </p>
+                  <p className="pb-5 text-[14px] font-normal flex items-center gap-3">
+                    <GoDotFill className=" text-[#FF5956]" /> Sightseeing as
+                    mentioned in the itinerary
+                  </p>
+                  <p className="pb-5 text-[14px] font-normal flex items-center gap-3">
+                    <GoDotFill className=" text-[#FF5956]" />
+                    Regional language speaking assistance on customer support
+                  </p>
+                </div>
+              </div>
+            </div>
             {/* 6th section */}
             <div className="shadow-md border rounded-md px-5 py-5">
               <div className="flex justify-between gap-2">
@@ -444,7 +514,7 @@ const Tour = ({ closeModal }) => {
               </div>
             </div>
             {/* 8th section */}
-            <div className="shadow-md border rounded-md py-5">
+            {/* <div className="shadow-md border rounded-md py-5">
               <p className="px-5">Reviews</p>
               <div className="border shadow-md px-5 mx-5 my-4 py-4">
                 <div className="flex gap-2">
@@ -474,7 +544,7 @@ const Tour = ({ closeModal }) => {
                   </div>
                 </div>
               </div>
-              {/* 2 */}
+             
               <div className="border shadow-md px-5 mx-5 my-4 py-4">
                 <div className="flex gap-2">
                   <Image
@@ -503,7 +573,7 @@ const Tour = ({ closeModal }) => {
                   </div>
                 </div>
               </div>
-              {/* 3rd */}
+             
               <div className="border shadow-md px-5 mx-5 my-4 py-4">
                 <div className="flex gap-2">
                   <Image
@@ -532,7 +602,7 @@ const Tour = ({ closeModal }) => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
             {/* 9th section */}
             <div className="shadow-md border rounded-md  py-5">
               <p className="px-5 font-semibold">Map</p>
@@ -573,7 +643,7 @@ const Tour = ({ closeModal }) => {
                                 className="absolute top-0 right-0 m-4 text-white"
                                 onClick={toggleMap}
                               >
-                                <IoMdClose size={35}/>
+                                <IoMdClose size={35} />
                               </button>
                               <iframe
                                 src="https://www.google.com/maps/d/embed?mid=1B1lAsUpYFg82Je7XN1_cxRPf1UU&hl=en_US&ehbc=2E312F"
@@ -681,27 +751,36 @@ const Tour = ({ closeModal }) => {
                           className="w-full py-3 px-5 border text-[#6C6C6C]"
                         />
                         <div className="flex gap-4">
-                          <select className="py-3 px-5 border">
+                          <select className="py-3 px-5 border outline-none">
                             <option value="+91">+91</option>
                             <option value="+91">+91</option>
                             <option value="+91">+91</option>
                           </select>
                           <input
                             type="number"
-                            placeholder=""
-                            className="w-full py-3 px-5 border text-[#6C6C6C]"
+                            placeholder="Mobile number"
+                            className="w-full py-3 px-5 border text-[#6C6C6C] outline-none"
                           />
                         </div>
-                        <input
-                          type="text"
-                          placeholder="Choose Date of Travel"
-                          className="w-full py-3 px-5 border text-[#6C6C6C]"
+
+                        <DatePicker
+                          selected={startDate}
+                          onChange={(date) => setStartDate(date)}
+                          isClearable
+                          className="px-5 py-3 border text-[#6C6C6C] w-full outline-none"
+                          placeholderText="Enter the Data of Travel"
+                          dateFormat="dd/MM/yyyy"
                         />
-                        <input
-                          type="text"
-                          placeholder="Attendance"
-                          className="w-full py-3 px-5 border text-[#6C6C6C]"
-                        />
+                        <div>
+                         
+
+                          <input
+                            type="number"
+                            placeholder="Number of Passengers"
+                            className="w-full py-3 px-5 border text-[#6C6C6C] outline-none"
+                          />
+                        </div>
+                        
                         <textarea
                           placeholder="Note"
                           className="px-5 py-3 pb-8 border text-[#6C6C6C]"
@@ -744,6 +823,9 @@ const Tour = ({ closeModal }) => {
                 </>
               )}
             </div>
+            <div className="shadow-md mt-4">
+              <Sliders />
+            </div>
           </div>
         </div>
       </div>
@@ -769,12 +851,12 @@ const Thanks = ({ closeModal }) => {
           A member of our team will be in touch with you soon!
         </p>
         {/* close button */}
-        <button
+        {/* <button
           className="text-[white] bg-[#FF5956] px-5 py-2"
           onClick={closeModal}
         >
           Close
-        </button>
+        </button> */}
       </div>
     </div>
   );

@@ -56,7 +56,7 @@ const Package = () => {
         <div>
           <h2 className="text-[14px] text-center font-medium">Take a Look</h2>
           <h1 className="text-[40px] text-center font-bold text-black">
-            Related Packages
+            Related Experiences
           </h1>
         </div>
         <div className=" container mx-auto mb-5 ">

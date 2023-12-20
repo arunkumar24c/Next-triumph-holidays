@@ -20,8 +20,8 @@ const Triumph = () => {
   ];
 
   return (
-    <div className="bg-[#F96768] overflow-hidden">
-      <div className=" py-10 ">
+    <div className="bg-[#F96768]">
+      <div className=" py-10">
         <div className="flex flex-col gap-2 py-10">
           <div className="flex xl:flex-row lg:flex-row md:flex-col flex-col justify-between px-3 py-5 ">
             <h1 className="xl:text-[40px] lg:text-[35px] md:text-[24px] text-[18px] text-white">

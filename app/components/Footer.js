@@ -116,7 +116,7 @@ const Footer = () => {
         </div>
       </div>
       {/* float image  */}
-      <div className="fixed z-[99999] bottom-5 right-5 ">
+      <div className="fixed z-[99999] bottom-5 right-9 ">
         <Image
           src={"/assest/tour/arrow.png"}
           width={60}

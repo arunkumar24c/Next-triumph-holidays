@@ -50,12 +50,12 @@ const Package = () => {
 
 
   return (
-    <div className="brand-container py-5">
+    <div className="brand-container py-5 px-5">
       <div className="flex flex-col gap-6 justify-center items-center py-10">
         <div>
           <h2 className="text-[14px] text-center font-medium">Take a Look</h2>
           <h1 className="text-[40px] text-center font-bold text-black">
-            Related Packages
+            Related Attractions
           </h1>
         </div>
         <div className=" container mx-auto mb-5 ">

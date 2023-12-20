@@ -15,28 +15,28 @@ const FaqData = [
   {
     id: "2",
     question: "What are the best tour packages of Singapore? ",
-    day:"1",
+    day:"2",
     answer:
       "We denounce with righteous indignation and dislike men  who are so beguiled and demoralized by the charms of pleasure of the We denounce with righteous indignationwho are so beguiled and demoralized . ",
   },
   {
     id: "3",
     question: "What are the best tour packages of Singapore?",
-    day:"1",
+    day:"3",
     answer:
       "We denounce with righteous indignation and dislike men  who are so beguiled and demoralized by the charms of pleasure of the We denounce with righteous indignationwho are so beguiled and demoralized .",
   },
   {
     id: "4",
     question: "What are the best tour packages of Singapore? ",
-    day:"1",
+    day:"4",
     answer:
       "We denounce with righteous indignation and dislike men  who are so beguiled and demoralized by the charms of pleasure of the We denounce with righteous indignationwho are so beguiled and demoralized .",
   },
   {
     id: "5",
     question: "What are the best tour packages of Singapore? ",
-    day:"1",
+    day:"5",
     answer:
       "We denounce with righteous indignation and dislike men  who are so beguiled and demoralized by the charms of pleasure of the We denounce with righteous indignationwho are so beguiled and demoralized .",
   },
@@ -59,7 +59,7 @@ const Faq = () => {
 
 export default Faq;
 
-const FaqCard = ({ question, answer }) => {
+const FaqCard = ({ question, answer, day }) => {
   const [open, setOpen] = useState(false);
 
   const toggleOpen = () => {
@@ -73,7 +73,9 @@ const FaqCard = ({ question, answer }) => {
           className="flex cursor-pointer bg-[#FFF2F1] justify-between items-center gap-6  px-5  w-full"
         >
           <p className="font-medium text-[16px] flex gap-2 items-center   my-5">
-            <span className="bg-[#FF5956] rounded-md text-[white] px-2 py-1">Day 1</span>
+            <span className="bg-[#FF5956] rounded-md text-[white] px-2 py-1">
+              Day{""} {day}
+            </span>
             {question}
           </p>
           <AiOutlineClose

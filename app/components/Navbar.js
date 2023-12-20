@@ -1,23 +1,24 @@
 "use client";
 import React, { useState } from "react";
-
+import { IoCallSharp } from "react-icons/io5";
 import Image from "next/image";
 import Link from "next/link";
 import RegisterModal from "../homecomponents/RegisterModal";
 
 const Navbar = () => {
-const [registerModal, setRegisterModal] = useState(false);
+  const [registerModal, setRegisterModal] = useState(false);
 
-const openModal = () => {
-  setRegisterModal(true);
-};
+  const openModal = () => {
+    setRegisterModal(true);
+  };
 
-const closeModal = () => {
-  setRegisterModal(false);
-};
+  const closeModal = () => {
+    setRegisterModal(false);
+  };
+  const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <header className="shadow-md w-full bg-white z-[9999] py-6 fixed top-0 left-0">
+    <header className="shadow-md w-full bg-white z-[9999] py-6 fixed top-0 left-0 px-4 overflow-hidden">
       <div className="px-5 flex justify-between items-center">
         <div className="flex gap-4">
           <Link href="/">
@@ -39,7 +40,17 @@ const closeModal = () => {
             </Link>
           </div>
         </div>
-        <div>
+
+        <div className="flex items-center gap-4">
+          <div
+            className={`transition-transform cursor-pointer px-5 transform hover:scale-110 ${
+              isHovered ? "animate-bounce" : ""
+            }`}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+          >
+            <IoCallSharp size={30} className="text-[#ff5956]" />
+          </div>
           <button
             className="bg-[#FF5956] text-[white] px-5 py-3"
             onClick={openModal}
@@ -52,7 +63,5 @@ const closeModal = () => {
     </header>
   );
 };
-
-
 
 export default Navbar;

@@ -5,9 +5,12 @@ import { FaLocationDot } from "react-icons/fa6";
 import { FaClock } from "react-icons/fa";
 import { GoDotFill } from "react-icons/go";
 import Image from "next/image";
-
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 import { GoChevronDown, GoChevronUp, GoDot } from "react-icons/go";
 import { CiStar } from "react-icons/ci";
+import Sliders from "./Sliders";
+
 
 const Tour = ({ closeModal }) => {
   const ImageData = [
@@ -40,7 +43,7 @@ const Tour = ({ closeModal }) => {
   const handleSubmit = () => {
     setSubmitted(true);
   };
-
+  const [startDate, setStartDate] = useState(new Date());
   return (
     <div>
       <div className="brand-container">
@@ -436,7 +439,7 @@ const Tour = ({ closeModal }) => {
               </div>
             </div>
             {/* 8th section */}
-            <div className="shadow-md border rounded-md py-5">
+            {/* <div className="shadow-md border rounded-md py-5">
               <p className="px-5">Reviews</p>
               <div className="border shadow-md px-5 mx-5 my-4 py-4">
                 <div className="flex gap-2">
@@ -466,7 +469,7 @@ const Tour = ({ closeModal }) => {
                   </div>
                 </div>
               </div>
-              {/* 2 */}
+              
               <div className="border shadow-md px-5 mx-5 my-4 py-4">
                 <div className="flex gap-2">
                   <Image
@@ -495,7 +498,7 @@ const Tour = ({ closeModal }) => {
                   </div>
                 </div>
               </div>
-              {/* 3rd */}
+             
               <div className="border shadow-md px-5 mx-5 my-4 py-4">
                 <div className="flex gap-2">
                   <Image
@@ -524,7 +527,7 @@ const Tour = ({ closeModal }) => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
             {/* 9th section */}
             <div className="shadow-md border rounded-md  py-5">
               <p className="px-5 font-semibold">Map</p>
@@ -635,20 +638,24 @@ const Tour = ({ closeModal }) => {
                           </select>
                           <input
                             type="number"
-                            placeholder=""
+                            placeholder="Your Mobile Number"
                             className="w-full py-3 px-5 border text-[#6C6C6C]"
                           />
                         </div>
-                        <input
-                          type="text"
-                          placeholder="Choose Date of Travel"
-                          className="w-full py-3 px-5 border text-[#6C6C6C]"
+                        <DatePicker
+                          selected={startDate}
+                          onChange={(date) => setStartDate(date)}
+                          isClearable
+                          className="px-5 py-3 border text-[#6C6C6C] w-full outline-none"
+                          placeholderText="Enter the Data of Travel"
+                          dateFormat="dd/MM/yyyy"
                         />
                         <input
                           type="text"
-                          placeholder="Attendance"
+                          placeholder="Number of Passengers"
                           className="w-full py-3 px-5 border text-[#6C6C6C]"
                         />
+                       
                         <textarea
                           placeholder="Note"
                           className="px-5 py-3 pb-8 border text-[#6C6C6C]"
@@ -691,6 +698,9 @@ const Tour = ({ closeModal }) => {
                 </>
               )}
             </div>
+            <div className="border shadow-md mt-4">
+              <Sliders />
+            </div>
           </div>
         </div>
       </div>
@@ -716,12 +726,12 @@ const Thanks = ({ closeModal }) => {
           A member of our team will be in touch with you soon!
         </p>
         {/* close button */}
-        <button
+        {/* <button
           className="text-[white] bg-[#FF5956] px-5 py-2"
           onClick={closeModal}
         >
           Close
-        </button>
+        </button> */}
       </div>
     </div>
   );

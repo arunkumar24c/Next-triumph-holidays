@@ -199,7 +199,7 @@ const PopularDestinationCard = ({ names, cities, tour }) => {
         >
           <div className="flex flex-col gap-2 justify-center items-center">
             <h2 className="text-white text-[18px]">{names}</h2>
-            <Link href="/german">
+            <Link href="/germany">
               {" "}
               <button className="px-5 py-2 font-semibold text-[14px] text-white bg-[#FF5956] rounded-md">
                 Book now !{" "}

@@ -39,6 +39,11 @@ const Filter = () => {
   ];
   const [sections, setSections] = useState([
     {
+      title: "Duration",
+      items: ["1-3 Days", "1 week", "2 Weeks", "1 Month"],
+      showList: true,
+    },
+    {
       title: "Packages",
       items: [
         "Tour Packages",
@@ -60,11 +65,6 @@ const Filter = () => {
         "Adventure Trip",
         "River Boating",
       ],
-      showList: true,
-    },
-    {
-      title: "Duration",
-      items: ["1-3 Days", "1 week", "2 Weeks", "1 Month"],
       showList: true,
     },
   ]);
@@ -359,7 +359,7 @@ const Filter = () => {
                     </p>
                   </div>
                   <div className="flex  py-2">
-                    <Link href="/details">
+                    <Link href="/experience">
                       <button className="px-11 py-4 font-medium text-[14px] text-white bg-[#FF5956] ">
                         Explore
                       </button>
@@ -397,7 +397,7 @@ const Filter = () => {
                     with brand d
                   </p>
                   <div className="py-4 ">
-                    <Link href="/">
+                    <Link href="/experience">
                       <button className="bg-[#FFF2F1] py-3 px-3 flex text-[#F96768] items-center gap-1">
                         View Experience{" "}
                         <IoIosArrowForward className="text-[#F96768]" />
@@ -435,7 +435,7 @@ const Filter = () => {
                     with brand d
                   </p>
                   <div className="py-4 ">
-                    <Link href="/">
+                    <Link href="/experience">
                       <button className="bg-[#FFF2F1] py-3 px-3 flex text-[#F96768] items-center gap-1">
                         View Experience{" "}
                         <IoIosArrowForward className="text-[#F96768]" />
@@ -486,7 +486,7 @@ const Filter = () => {
                     </p>
                   </div>
                   <div className="flex  py-2">
-                    <Link href="/details">
+                    <Link href="/experience">
                       <button className="px-11 py-4 font-medium text-[14px] text-white bg-[#FF5956] ">
                         Explore
                       </button>
@@ -536,7 +536,7 @@ const Filter = () => {
                     </p>
                   </div>
                   <div className="flex  py-2">
-                    <Link href="/details">
+                    <Link href="/experience">
                       <button className="px-11 py-4 font-medium text-[14px] text-white bg-[#FF5956] ">
                         Explore
                       </button>
@@ -586,7 +586,7 @@ const Filter = () => {
                     </p>
                   </div>
                   <div className="flex  py-2">
-                    <Link href="/details">
+                    <Link href="/experience">
                       <button className="px-11 py-4 font-medium text-[14px] text-white bg-[#FF5956] ">
                         Explore
                       </button>

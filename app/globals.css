@@ -32,6 +32,15 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
+::-webkit-scrollbar {
+  display: none;
+}
+/* styles.css */
+/* Hide scrollbar for Chrome, Safari, and Opera */
+::-webkit-scrollbar {
+  display: none;
+}
+
 
 .bg {
     background-image: url("../public/assest/trip/bg.png");
