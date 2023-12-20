@@ -58,7 +58,7 @@ const Policy = () => {
                       business days.
                     </li>
                     <li className="py-1 font-medium">
-                      All applicable refunds will be done in the traveler's
+                      All applicable refunds will be done in the traveler&apos;s
                       Thrillophilia wallet as Thrillcash.
                     </li>
                   </ul>
