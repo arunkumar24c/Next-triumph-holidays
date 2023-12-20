@@ -772,15 +772,25 @@ const Tour = ({ closeModal }) => {
                           dateFormat="dd/MM/yyyy"
                         />
                         <div>
-                         
-
-                          <input
-                            type="number"
-                            placeholder="Number of Passengers"
-                            className="w-full py-3 px-5 border text-[#6C6C6C] outline-none"
-                          />
+                          <div>
+                            <p className="px-4 py-2 text-[#6c6c6c] text-[16px] font-normal">
+                              Number of Passengers
+                            </p>
+                            <div className="flex gap-2">
+                              <input
+                                type="number"
+                                placeholder="No of Adult"
+                                className="w-full py-3 px-5 border text-[#6C6C6C] outline-none"
+                              />
+                              <input
+                                type="number"
+                                placeholder="No of Child"
+                                className="w-full py-3 px-5 border text-[#6C6C6C] outline-none"
+                              />
+                            </div>
+                          </div>
                         </div>
-                        
+
                         <textarea
                           placeholder="Note"
                           className="px-5 py-3 pb-8 border text-[#6C6C6C]"
